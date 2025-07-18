@@ -1,14 +1,15 @@
 import { useState } from "react"
-
+import Image from "./Image"
+import { Link } from 'react-router-dom'
 const Navbar = () => {
   const [open, setOpen] = useState(false)
   return (
     <div className="flex items-center justify-between w-full h-16 md:h-20">
       {/* logo */}
-      <div className="flex items-center gap-4 font-bold">
-        <img src="/logo.png" alt="" className="w-8 h-8" />
+      <Link to="/" className="flex items-center gap-4 font-bold">
+        <Image src="logo.png" alt="lamalog" w={32} h={32}></Image>
         <span>lamalog</span>
-      </div>
+      </Link>
       {/* mobile menu */}
       <div className="md:hidden">
         <div className="cursor-pointer text-4xl" onClick={() => setOpen(pre => !pre)}>
@@ -27,13 +28,13 @@ const Navbar = () => {
       </div>
         {/* desktop menu */}
         <div className="hidden md:flex justify-between items-center gap-8 xl:gap-12 font-medium">
-            <a href="/">Home</a>
-            <a href="/">Trending</a>
-            <a href="/">Popular</a>
-            <a href="/">About</a>
-          <a href="/">
+            <Link to="/">Home</Link>
+            <Link to="/">Trending</Link>
+            <Link to="/">Popular</Link>
+            <Link to="/">About</Link>
+          <Link to="/login">
               <button className="py-2 px-4 rounded-3xl bg-blue-800 text-white">Login 👌</button>
-          </a>
+          </Link>
       </div>
     </div>
   )
