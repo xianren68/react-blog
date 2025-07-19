@@ -1,17 +1,18 @@
 import { IKImage } from 'imagekitio-react'
+import React from 'react'
 
-const Image = ({
+const Image: React.FC<{
+  src: string
+  alt: string
+  className?: string
+  w?: number
+  h?: number
+}> = ({
   src,
   alt,
   className,
   w,
   h,
-}: {
-  src: string
-  alt: string
-  className?: string
-  w: number
-  h: number
 }) => {
   return (
     <IKImage
