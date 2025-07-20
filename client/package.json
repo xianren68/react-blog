@@ -7,13 +7,15 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,vue,sass,scss,less,style}\""
   },
   "dependencies": {
     "@clerk/clerk-react": "^5.35.3",
     "@tailwindcss/vite": "^4.1.11",
     "add": "^2.0.6",
     "imagekitio-react": "^4.3.0",
+    "prettier": "^3.6.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.7.0",
