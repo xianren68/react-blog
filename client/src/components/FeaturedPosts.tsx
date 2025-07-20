@@ -8,7 +8,7 @@ const FeaturedPosts: React.FC = () => {
 			{/*第一*/}
 			<div className="w-full lg:w-1/2 flex flex-col gap-4">
 				{/*    图片*/}
-				<Image src="featured1.jpeg" alt="featured1" className="rounded-3xl object-cover"></Image>
+				<Image src="featured1.jpeg" alt="featured1" className="rounded-3xl object-cover" w={895}></Image>
 				{/*    详情*/}
 				<div className="flex items-center gap-5">
 					<h1 className="font-semibold lg:text-lg">01.</h1>
@@ -25,7 +25,7 @@ const FeaturedPosts: React.FC = () => {
 			{/*其他*/}
 			<div className="w-full lg:w-1/2 flex flex-col gap-4">
 				<div className="lg:h-1/3 flex justify-between gap-4">
-					<Image src="featured2.jpeg" alt="featured1" className="rounded-3xl object-cover w-1/3 aspect-video" />
+					<Image src="featured2.jpeg" alt="featured1" className="rounded-3xl object-cover w-1/3 aspect-video" w={298}/>
 					<div className="w-2/3">
 						<div className="flex items-center gap-4 text-sm lg:text-base mb-4">
 							<h1 className="font-semibold lg:text-lg">02.</h1>
@@ -41,7 +41,7 @@ const FeaturedPosts: React.FC = () => {
 					</div>
 				</div>
 				<div className="lg:h-1/3 flex justify-between gap-4">
-					<Image src="featured2.jpeg" alt="featured1" className="rounded-3xl object-cover w-1/3 aspect-video" />
+					<Image src="featured2.jpeg" alt="featured1" className="rounded-3xl object-cover w-1/3 aspect-video" w={298}/>
 					<div className="w-2/3">
 						<div className="flex items-center gap-4 text-sm lg:text-base mb-4">
 							<h1 className="font-semibold lg:text-lg">03.</h1>
@@ -57,7 +57,7 @@ const FeaturedPosts: React.FC = () => {
 					</div>
 				</div>
 				<div className="lg:h-1/3 flex justify-between gap-4">
-					<Image src="featured2.jpeg" alt="featured1" className="rounded-3xl object-cover w-1/3 aspect-video" />
+					<Image src="featured2.jpeg" alt="featured1" className="rounded-3xl object-cover w-1/3 aspect-video" w={298}/>
 					<div className="w-2/3">
 						<div className="flex items-center gap-4 text-sm lg:text-base mb-4">
 							<h1 className="font-semibold lg:text-lg">04.</h1>

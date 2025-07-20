@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
-import MainCategories from '../conponents/MainCategories.tsx'
-import FeaturedPosts from '../conponents/FeaturedPosts.tsx'
+import MainCategories from '../components/MainCategories.tsx'
+import FeaturedPosts from '../components/FeaturedPosts.tsx'
+import PostList from '../components/PostList.tsx'
 
 const HomePage = () => {
 	return (
@@ -50,6 +51,7 @@ const HomePage = () => {
 			{/*	最近文章*/}
 			<div className="">
 				<h1 className="my-8 text-gray-600 text-2xl">Recent posts</h1>
+				<PostList></PostList>
 			</div>
 		</div>
 	)
